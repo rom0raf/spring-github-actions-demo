@@ -1,0 +1,16 @@
+name: "Exercice workflow"
+
+on: 
+  workflow_dispatch:
+  # schedule:
+  #   - cron: "00 * * * *"
+
+jobs:
+  main_job:
+    name: "main_job"
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Run les commandes"
+        run: |
+          echo "Récuperation du code source"
+          echo "Vérification terminée"
